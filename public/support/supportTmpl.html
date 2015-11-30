@@ -1,0 +1,9 @@
+<h2 class="text-center">Tickets</h2>
+
+	<div class="text-center jumbotron" ng-repeat="(key, val) in numbers">
+		<div class="from">{{key}}</div>
+		<div class="message" ng-repeat="message in val">
+			<div class="date">{{message.Date}}</div>
+			<div>{{message.Message}}</div>
+		</div>
+	</div>
