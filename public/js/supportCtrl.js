@@ -6,7 +6,7 @@
 			$scope.numbers = $firebaseObject(supportRef);
 
 			$scope.addComment = function(comment) {
-				supportService.addComment($scope.comment)
+				supportService.addComment($scope.comment);
 			};
 		});
 })();

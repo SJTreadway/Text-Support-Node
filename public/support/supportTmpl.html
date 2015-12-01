@@ -1,9 +1,15 @@
 <h2 class="text-center">Tickets</h2>
-
-	<div class="text-center jumbotron" ng-repeat="(key, val) in numbers">
-		<div class="from">{{key}}</div>
-		<div ng-repeat="message in val">
-			<div class="date">{{message.date}}</div>
-			<div class="message">{{message.message}}</div>
-		</div>
+<div class="text-center messages" ng-repeat="(key, val) in numbers">
+	<div class="from">{{key}}</div>
+	<div ng-repeat="message in val">
+		<div class="date">{{message.date}}</div>
+		<div class="message">{{message.message}}</div>
 	</div>
+</div>
+<div class="text-center">
+	<form ng-submit='addComment(comment)'>
+		<input type='text' ng-model="comment">
+		<button class="btn-primary">Submit</button>
+	</form>
+</div>
+<a ui-sref="home"><h4 class="text-center">Back</h4></a>

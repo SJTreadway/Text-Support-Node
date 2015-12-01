@@ -12,7 +12,6 @@
 	color: red;
 	font-size: 1em;
 }
-.message {
-	font-size: 1em;
-	border: limegreen;
+.messages {
+	border-left: skyblue;
 }
